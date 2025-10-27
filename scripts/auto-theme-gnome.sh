@@ -3,7 +3,7 @@ if [ -n "$KITTY_PID" ]; then
   if [[ "${GNOME_COLOR_SCHEME//\'/}" == "default" ]]; then
     export KITTY_COLORS="light"
   else
-    export KITTY_COLORS="dark"
+    export KITTY_COLORS="default"
   fi
   kitty @ set-colors --all "~/.config/kitty/colors/$KITTY_COLORS.conf"
 fi
